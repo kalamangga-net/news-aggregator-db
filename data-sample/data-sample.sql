@@ -1,3 +1,10 @@
 INSERT INTO `berita` (`id`, `id_sindikasi`, `judul`, `link`, `tanggal`, `rangkuman`, `citra`) VALUES
 (1, 1, 'Kader Muda PD Minta Darwin Saleh Tak Direshuffle', 'http://www.detiknews.com/read/2011/09/30/162727/1734197/10/kader-muda-pd-minta-darwin-saleh-tak-direshuffle', '2011-09-30 09:41:08', '<img src="http://images.detik.com/content/2011/09/30/10/darwin-saleh.jpg" align="left" hspace="7" width="100" />Menteri ESDM Darwin Zahedy Saleh dikabarkan gencar akan direshuffle. Kader muda PD pun membelanya, meminta agar Darwin dipertahankan.', ''),
 (2, 1, 'Pabrik Sabu di Sentul Terkait Jaringan Internasional', 'http://www.detiknews.com/read/2011/09/30/162549/1734193/10/pabrik-sabu-di-sentul-terkait-jaringan-internasional', '2011-09-30 09:41:08', '<img src="http://images.detik.com/content/2011/09/30/10/polri-logo.jpg" align="left" hspace="7" width="100" />Direktorat Narkoba Polda Metro Jaya mengamankan dua tersangka di pabrik pembuatan sabu dan ekstasi di Kemayoran dan Sentul. Polisi menyebut tersangka merupakan jaringan internasional.', '');
+INSERT INTO `xml` (`id`, `nama`, `url`, `judul`, `link`, `img`, `fetch`) VALUES
+(1, 'detiknews', 'http://rss.detik.com/', 'DetikNews.Com - Situs Warta Era Digital', 'http://www.detiknews.com/', 'http://rss.detik.com/images/rsslogo_detiknews.gif', 1),
+(2, 'KOMPAS.com', 'http://www.kompas.com/getrss/all', 'News and Service', 'http://www.kompas.com/', 'http://www.kompas.com/data/images/logo_kompas_putih.gif', 1),
+(3, 'Tribunnews - RSS ', 'http://www.tribunnews.com/rss', 'Berita Terkini dari Tribunnews.com', 'http://www.tribunnews.com/', 'http://www.tribunnews.com/stylesheets/tribunnews_small.png', 1),
+(4, 'SUMEKS ONLINE | Harian Pagi Sumatera Ekspres Palembang', 'http://www.sumeks.co.id/index.php?format=feed&type=rss', 'Harian Pagi Sumatera Ekspres Palembang | SUMEKS ONLINE', 'http://www.sumeks.co.id/index.php?option=com_content&amp;view=frontpage', '', 1),
+(5, 'ANTARA News - Berita Top News', 'http://www.antaranews.com/rss/top-news', 'ANTARA News - Berita Top News', 'http://www.antaranews.com', '', 1);
+
