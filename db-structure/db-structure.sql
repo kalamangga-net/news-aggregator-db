@@ -1,16 +1,20 @@
 CREATE DATABASE IF NOT EXISTS `kalamangga`;
+
 USE `kalamangga`;
-CREATE TABLE IF NOT EXISTS `berita` (
+
+CREATE TABLE IF NOT EXISTS `link` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `id_sindikasi` tinyint(4) NOT NULL,
   `judul` tinytext NOT NULL,
-  `link` varchar(150) NOT NULL,
+  `link` varchar(300) NOT NULL,
   `tanggal` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `rangkuman` text NOT NULL,
-  `citra` varchar(100) NOT NULL,
+  `ringkasan` text NOT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `link` (`link`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+  UNIQUE KEY `link` (`link`),
+  KEY `id_sindikasi` (`id_sindikasi`),
+  FULLTEXT KEY `judul` (`judul`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1;
+
 CREATE TABLE IF NOT EXISTS `xml` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nama` varchar(75) NOT NULL,
