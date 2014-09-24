@@ -9,6 +9,10 @@ INSERT INTO `link` (`id`, `id_sindikasi`, `judul`, `link`, `tanggal`, `ringkasan
 INSERT INTO `link` (`id`, `id_sindikasi`, `judul`, `link`, `tanggal`, `ringkasan`) VALUES
 (5, 1, 'Pemerkosa dan Perampok Guru SD di Ciputat Sudah Beristri dan Punya Bayi', 'http://news.detik.com/read/2013/04/02/150444/2209430/10/pemerkosa-dan-perampok-guru-sd-di-ciputat-sudah-beristri-dan-punya-bayi', '2013-04-02 08:48:54', 'Polisi telah meringkus Iskandar (43), pelaku pemerkosan dan perampokan guru SD di Ciputat. Iskandar telah memiliki seorang istri dan bayi yang berusia dua bulan.');
 
+INSERT INTO `menu` VALUES (1,'Beranda','/'),
+	(2,'Tentang Kami','http://www.kalamangga.net'),
+	(3,'Log Pengembangan','http://www.kalamangga.web.id');
+
 INSERT INTO `xml` (`id`, `nama`, `url`, `judul`, `link`, `img`, `fetch`) VALUES
 (1, 'detiknews', 'http://rss.detik.com/', 'DetikNews.Com - Situs Warta Era Digital', 'http://www.detiknews.com/', 'http://rss.detik.com/images/rsslogo_detiknews.gif', 1),
 (2, 'KOMPAS.com', 'http://www.kompas.com/getrss/all', 'News and Service', 'http://www.kompas.com/', 'http://www.kompas.com/data/images/logo_kompas_putih.gif', 1),

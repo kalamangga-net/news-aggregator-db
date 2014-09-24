@@ -1,8 +1,8 @@
 CREATE DATABASE IF NOT EXISTS `kalamangga`;
-
 USE `kalamangga`;
 
-CREATE TABLE IF NOT EXISTS `link` (
+DROP TABLE `link`;
+CREATE TABLE `link` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `id_sindikasi` tinyint(4) NOT NULL,
   `judul` tinytext NOT NULL,
@@ -15,7 +15,16 @@ CREATE TABLE IF NOT EXISTS `link` (
   FULLTEXT KEY `judul` (`judul`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1;
 
-CREATE TABLE IF NOT EXISTS `xml` (
+DROP TABLE `menu`;
+CREATE TABLE `menu` (
+  `id_menu` int(11) NOT NULL AUTO_INCREMENT,
+  `nm_menu` varchar(35) NOT NULL,
+  `link` varchar(100) NOT NULL,
+  PRIMARY KEY (`id_menu`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+DROP TABLE `xml`;
+CREATE TABLE `xml` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nama` varchar(75) NOT NULL,
   `url` varchar(100) NOT NULL,
@@ -24,4 +33,4 @@ CREATE TABLE IF NOT EXISTS `xml` (
   `img` varchar(100) NOT NULL,
   `fetch` tinyint(1) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
