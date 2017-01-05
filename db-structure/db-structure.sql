@@ -1,7 +1,7 @@
 CREATE DATABASE IF NOT EXISTS `kalamangga`;
 USE `kalamangga`;
 
-DROP TABLE `link`;
+DROP TABLE IF EXISTS `link`;
 CREATE TABLE `link` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `id_sindikasi` tinyint(4) NOT NULL,
@@ -15,7 +15,7 @@ CREATE TABLE `link` (
   FULLTEXT KEY `judul` (`judul`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1;
 
-DROP TABLE `menu`;
+DROP TABLE IF EXISTS `menu`;
 CREATE TABLE `menu` (
   `id_menu` int(11) NOT NULL AUTO_INCREMENT,
   `nm_menu` varchar(35) NOT NULL,
@@ -23,7 +23,7 @@ CREATE TABLE `menu` (
   PRIMARY KEY (`id_menu`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
-DROP TABLE `xml`;
+DROP TABLE IF EXISTS `xml`;
 CREATE TABLE `xml` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nama` varchar(75) NOT NULL,
