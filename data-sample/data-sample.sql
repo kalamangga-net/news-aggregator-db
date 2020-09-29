@@ -24,6 +24,7 @@ INSERT INTO `menu` VALUES (1,'Beranda','https://kalamangga.com'),
 	(2,'Tentang Kami','https://kalamangga.net'),
 	(3,'Log Pengembangan','https://blog.kalamangga.web.id');
 
+TRUNCATE TABLE `xml`;
 INSERT INTO `xml` (`id`, `nama`, `url`, `judul`, `link`, `img`, `fetch`) VALUES
 (1, 'detiknews', 'http://rss.detik.com/', 'DetikNews.Com - Situs Warta Era Digital', 'http://www.detiknews.com/', 'http://rss.detik.com/images/rsslogo_detiknews.gif', 1),
 (2, 'KOMPAS.com', 'http://www.kompas.com/getrss/all', 'News and Service', 'http://www.kompas.com/', 'http://www.kompas.com/data/images/logo_kompas_putih.gif', 1),
